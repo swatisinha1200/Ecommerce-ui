@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | ShopEase</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+          <a href="index.html">ShopEase</a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Shop</a>
+          <a href="categories.html">Categories</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- User Actions -->
+        <div class="user-actions">
+          <!-- Search -->
+          <div class="search">
+            <form action="" method="get">
+              <label for="search">Search Products</label>
+
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="Search products..."
+              />
+
+              <button type="submit" aria-label="Search products">
+                <img src="assets/icon/search.png" alt="Search" />
+              </button>
+            </form>
+          </div>
+
+          <!-- Wishlist -->
+          <div class="wishlist">
+            <a href="wishlist.html">
+              <img src="assets/icon/heart.png" alt="Wishlist" />
+            </a>
+            <span>2</span>
+          </div>
+
+          <!-- Cart -->
+          <div class="cart">
+            <a href="cart.html">
+              <img src="assets/icon/shopping-cart.png" alt="Shopping cart" />
+            </a>
+            <span>3</span>
+          </div>
+
+          <!-- Profile -->
+          <div class="profile">
+            <img src="assets/icon/account.png" alt="Profile" />
+
+            <span>Swati</span>
+
+            <div class="drop-down">
+              <a href="profile.html">My Profile</a>
+              <a href="orders.html">My Orders</a>
+              <a href="wishlist.html">Wishlist</a>
+              <a href="login.html">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Contact Hero -->
+      <section class="contact-hero">
+        <div class="contact-hero-content">
+          <h1>Contact Us</h1>
+
+          <p>
+            Have a question, suggestion, or need help with your order? We're
+            here to help.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Information -->
+      <section class="contact-information">
+        <h2>Get in Touch</h2>
+
+        <p>
+          Our customer support team is ready to assist you with your shopping
+          experience.
+        </p>
+
+        <div class="contact-info-container">
+          <article class="contact-info-card">
+            <div class="contact-icon">
+              <img src="assets/icon/email.png" alt="Email" />
+            </div>
+
+            <h3>Email Us</h3>
+
+            <p>support@shopease.com</p>
+
+            <a href="mailto:support@shopease.com"> Send an Email </a>
+          </article>
+
+          <article class="contact-info-card">
+            <div class="contact-icon">
+              <img src="assets/icon/phone.png" alt="Phone" />
+            </div>
+
+            <h3>Call Us</h3>
+
+            <p>+1 800 123 4567</p>
+
+            <a href="tel:+18001234567"> Call Now </a>
+          </article>
+
+          <article class="contact-info-card">
+            <div class="contact-icon">
+              <img src="assets/icon/location.png" alt="Location" />
+            </div>
+
+            <h3>Visit Us</h3>
+
+            <p>123 Market Street, New York, USA</p>
+
+            <a href="#"> View Location </a>
+          </article>
+
+          <article class="contact-info-card">
+            <div class="contact-icon">
+              <img src="assets/icon/support.png" alt="Customer support" />
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>Available 24/7</p>
+
+            <a href="faq.html"> Visit FAQs </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <div class="contact-form-container">
+          <div class="contact-form-content">
+            <h2>Send Us a Message</h2>
+
+            <p>
+              Fill out the form below and our team will get back to you as soon
+              as possible.
+            </p>
+
+            <form action="" method="post">
+              <!-- Name -->
+              <div class="form-group">
+                <label for="name">Full Name</label>
+
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Email Address</label>
+
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email address"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+
+              <!-- Phone -->
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  autocomplete="tel"
+                />
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="subject">Subject</label>
+
+                <select name="subject" id="subject" required>
+                  <option value="">Select a subject</option>
+                  <option value="order">Order Support</option>
+                  <option value="product">Product Question</option>
+                  <option value="shipping">Shipping Question</option>
+                  <option value="return">Return or Refund</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <!-- Order Number -->
+              <div class="form-group">
+                <label for="order-number"> Order Number </label>
+
+                <input
+                  type="text"
+                  name="order-number"
+                  id="order-number"
+                  placeholder="Enter your order number"
+                />
+              </div>
+
+              <!-- Preferred Contact -->
+              <fieldset>
+                <legend>Preferred Contact Method</legend>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="contact-method"
+                    value="email"
+                    checked
+                  />
+                  Email
+                </label>
+
+                <label>
+                  <input type="radio" name="contact-method" value="phone" />
+                  Phone
+                </label>
+              </fieldset>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">Message</label>
+
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  placeholder="Write your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Consent -->
+              <div class="form-checkbox">
+                <label>
+                  <input
+                    type="checkbox"
+                    name="contact-consent"
+                    value="yes"
+                    required
+                  />
+
+                  I agree to be contacted regarding my request.
+                </label>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Image -->
+          <div class="contact-form-image">
+            <img
+              src="assets/contact/customer-support.jpg"
+              alt="ShopEase customer support"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Hours -->
+      <section class="business-hours">
+        <h2>Business Hours</h2>
+
+        <p>
+          Our online store is available 24/7. Customer support is available
+          during the following hours.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Opening Time</th>
+              <th scope="col">Closing Time</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Monday</td>
+              <td>9:00 AM</td>
+              <td>8:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00 AM</td>
+              <td>8:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Wednesday</td>
+              <td>9:00 AM</td>
+              <td>8:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Thursday</td>
+              <td>9:00 AM</td>
+              <td>8:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Friday</td>
+              <td>9:00 AM</td>
+              <td>8:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Saturday</td>
+              <td>10:00 AM</td>
+              <td>6:00 PM</td>
+            </tr>
+
+            <tr>
+              <td>Sunday</td>
+              <td>10:00 AM</td>
+              <td>4:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- FAQ CTA -->
+      <section class="faq-cta">
+        <h2>Have More Questions?</h2>
+
+        <p>
+          Find quick answers to common questions about orders, shipping,
+          returns, and payments.
+        </p>
+
+        <a href="faq.html" class="cta-button"> Visit FAQ </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <!-- About -->
+        <section class="footer-about">
+          <div class="logo">
+            <a href="index.html">ShopEase</a>
+          </div>
+
+          <p>
+            ShopEase is your one-stop destination for quality products at
+            affordable prices with fast delivery and secure shopping.
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="customer-service">
+          <h3>Customer Service</h3>
+
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </section>
+
+        <!-- Follow Us -->
+        <section class="follow-us">
+          <h3>Follow Us</h3>
+
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <h3>Accepted Payments</h3>
+
+        <ul>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>PayPal</li>
+          <li>UPI</li>
+        </ul>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

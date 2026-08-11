@@ -3,565 +3,714 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+
+    <title>ShopEase | Online Shopping</title>
   </head>
+
   <body>
+    <!-- ==================== HEADER ==================== -->
     <header>
       <div class="container">
+        <!-- Logo -->
         <div class="logo">
           <a href="index.html">ShopEase</a>
         </div>
-        <nav class="navigation">
+
+        <!-- Navigation -->
+        <nav class="navigation" aria-label="Main navigation">
           <a href="index.html">Home</a>
           <a href="products.html">Shop</a>
           <a href="categories.html">Categories</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </nav>
+
+        <!-- User Actions -->
         <div class="user-actions">
+          <!-- Search -->
           <div class="search">
             <form action="" method="get">
+              <label for="search">Search Products</label>
+
               <input
                 type="search"
                 name="search"
                 id="search"
                 placeholder="Search products..."
               />
-              <button type="submit" aria-label>
-                <img
-                  src="assets/icon/search.png"
-                  alt="search"
-                  height="12px"
-                  width="12px"
-                />
+
+              <button type="submit" aria-label="Search products">
+                <img src="assets/icon/search.png" alt="Search" />
               </button>
             </form>
           </div>
+
+          <!-- Wishlist -->
           <div class="wishlist">
-            <a href="wishlist.html"
-              ><img
-                src="assets/icon/heart.png"
-                alt="wishlist"
-                height="12px"
-                width="12px"
-            /></a>
+            <a href="wishlist.html" aria-label="View wishlist">
+              <img src="assets/icon/heart.png" alt="Wishlist" />
+            </a>
+
             <span>2</span>
           </div>
+
+          <!-- Cart -->
           <div class="cart">
-            <a href="cart.html"
-              ><img
-                src="assets/icon/shopping-cart.png"
-                alt="cart"
-                height="12px"
-                width="12px"
-            /></a>
+            <a href="cart.html" aria-label="View shopping cart">
+              <img src="assets/icon/shopping-cart.png" alt="Shopping cart" />
+            </a>
+
             <span>3</span>
           </div>
+
+          <!-- Profile -->
           <div class="profile">
-            <img
-              src="assets/icon/account.png"
-              alt="profile"
-              height="12px"
-              width="12px"
-            />
+            <img src="assets/icon/account.png" alt="Profile" />
+
             <span>Swati</span>
-            <div class="drop-down">
+
+            <nav class="drop-down" aria-label="Profile navigation">
               <a href="profile.html">My Profile</a>
               <a href="orders.html">My Orders</a>
               <a href="wishlist.html">Wishlist</a>
               <a href="login.html">Logout</a>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- ==================== MAIN ==================== -->
     <main>
+      <!-- ==================== HERO ==================== -->
       <section class="hero">
         <div class="hero-content">
           <span>New Season Sale</span>
+
           <h1>Discover Quality Products for Every Lifestyle</h1>
+
           <p>
             Shop electronics, fashion, home essentials, and more with exclusive
             deals and fast delivery.
           </p>
-          <a href="products.html" class="cta-button">Shop Now</a>
-          <a href="categories.html" class="cta-button">Explore Collection</a>
+
+          <div class="hero-actions">
+            <a href="products.html" class="cta-button"> Shop Now </a>
+
+            <a href="categories.html" class="cta-button">
+              Explore Collection
+            </a>
+          </div>
 
           <div class="offer-badges">
             <span>🔥 Up to 50% OFF</span>
             <span>Free Shipping on Orders Over $50</span>
           </div>
         </div>
+
         <div class="hero-image">
           <img
             src="assets/hero/Electronics-collection.jpg"
             alt="Electronics collection"
-            width="1200"
-            height="400"
           />
         </div>
       </section>
+
+      <!-- ==================== CATEGORIES ==================== -->
       <section class="categories">
         <h2>Shop by Categories</h2>
+
         <p>Browse our wide range of products and find exactly what you need.</p>
+
         <div class="categories-container">
-          <article class="category-feature-card electronics">
+          <!-- Electronics -->
+          <article class="category-card electronics">
             <div class="category-image">
-              <img
-                src="assets/Category/Electronics.jpg"
-                alt="electronics"
-                height="50px"
-                width="60px"
-              />
+              <img src="assets/Category/Electronics.jpg" alt="Electronics" />
             </div>
-            <div class="category-name"><h3>Electronics</h3></div>
+
+            <div class="category-name">
+              <h3>Electronics</h3>
+            </div>
+
             <div class="category-desc">
               <p>Latest gadgets and accessories.</p>
             </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
-          <article class="category-feature-card fashion">
+
+          <!-- Fashion -->
+          <article class="category-card fashion">
             <div class="category-image">
-              <img
-                src="assets/Category/Fashion.jpg"
-                alt="fashion"
-                height="50px"
-                width="60px"
-              />
+              <img src="assets/Category/Fashion.jpg" alt="Fashion" />
             </div>
-            <div class="category-name"><h3>Fashion</h3></div>
+
+            <div class="category-name">
+              <h3>Fashion</h3>
+            </div>
+
             <div class="category-desc">
               <p>Trending styles for everyone.</p>
             </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
-          <article class="category-feature-card home-kitchen">
+
+          <!-- Home & Kitchen -->
+          <article class="category-card home-kitchen">
             <div class="category-image">
               <img
                 src="assets/Category/home-kitchen.jpg"
-                alt="home-kitchen"
-                height="50px"
-                width="60px"
+                alt="Home and Kitchen"
               />
             </div>
-            <div class="category-name"><h3>Home & Kitchen</h3></div>
-            <div class="category-desc"><p>Everything for your home.</p></div>
+
+            <div class="category-name">
+              <h3>Home &amp; Kitchen</h3>
+            </div>
+
+            <div class="category-desc">
+              <p>Everything for your home.</p>
+            </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
-          <article class="category-feature-card beauty">
+
+          <!-- Beauty -->
+          <article class="category-card beauty">
             <div class="category-image">
-              <img
-                src="assets/Category/Beauty.jpg"
-                alt="beauty"
-                height="50px"
-                width="60px"
-              />
+              <img src="assets/Category/Beauty.jpg" alt="Beauty" />
             </div>
-            <div class="category-name"><h3>Beauty</h3></div>
-            <div class="category-desc"><p>Skincare and cosmetics.</p></div>
+
+            <div class="category-name">
+              <h3>Beauty</h3>
+            </div>
+
+            <div class="category-desc">
+              <p>Skincare and cosmetics.</p>
+            </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
-          <article class="category-feature-card sports">
+
+          <!-- Sports -->
+          <article class="category-card sports">
             <div class="category-image">
-              <img
-                src="assets/Category/sport.jpg"
-                alt="sports"
-                height="50px"
-                width="60px"
-              />
+              <img src="assets/Category/sport.jpg" alt="Sports" />
             </div>
-            <div class="category-name"><h3>Sports</h3></div>
+
+            <div class="category-name">
+              <h3>Sports</h3>
+            </div>
+
             <div class="category-desc">
               <p>Fitness and outdoor essentials.</p>
             </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
-          <article class="category-feature-card books">
+
+          <!-- Books -->
+          <article class="category-card books">
             <div class="category-image">
-              <img
-                src="assets/Category/books.jpg"
-                alt="books"
-                height="50px"
-                width="60px"
-              />
+              <img src="assets/Category/books.jpg" alt="Books" />
             </div>
-            <div class="category-name"><h3>Books</h3></div>
+
+            <div class="category-name">
+              <h3>Books</h3>
+            </div>
+
             <div class="category-desc">
               <p>Discover your next favorite read.</p>
             </div>
+
             <div class="cta-btn">
-              <a href="products.html" class="cta-button">Shop Now</a>
+              <a href="products.html" class="cta-button"> Shop Now </a>
             </div>
           </article>
         </div>
       </section>
+
+      <!-- ==================== FEATURED PRODUCTS ==================== -->
       <section class="featured">
         <h2>Featured Products</h2>
+
         <p>Discover our best-selling products at unbeatable prices.</p>
+
         <div class="feature-container">
-          <article class="featured-feature-card laptop">
+          <!-- Laptop -->
+          <article class="featured-card laptop">
             <div class="featured-badge">NEW</div>
-            <div class="product-image">
-              <img
-                src="assets/featured/laptop.jpg"
-                alt="laptop"
-                height="50px"
-                width="60px"
-              />
+
+            <div class="feature-image">
+              <img src="assets/featured/laptop.jpg" alt="Laptop" />
             </div>
-            <div class="product-name"><h3>Laptop</h3></div>
+
+            <div class="product-name">
+              <h3>Laptop</h3>
+            </div>
+
             <div class="product-category">
               <p>Electronics</p>
             </div>
-            <div class="product-rating"><span>★★★★★</span></div>
-            <div class="product-price"><p>$1200</p></div>
+
+            <div class="product-rating" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+
+            <div class="product-price">
+              <p>$1200</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
-          <article class="featured-feature-card headphone">
+
+          <!-- Headphones -->
+          <article class="featured-card headphone">
             <div class="featured-badge">HOT</div>
-            <div class="product-image">
+
+            <div class="feature-image">
               <img
                 src="assets/featured/headphone.jpg"
-                alt="headphone"
-                height="50px"
-                width="60px"
+                alt="Wireless headphones"
               />
             </div>
-            <div class="product-name"><h3>Wireless Headphones</h3></div>
+
+            <div class="product-name">
+              <h3>Wireless Headphones</h3>
+            </div>
+
             <div class="product-category">
               <p>Electronics</p>
             </div>
-            <div class="product-rating"><span>★★★★☆</span></div>
-            <div class="product-price"><p>$199</p></div>
+
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span>★★★★☆</span>
+            </div>
+
+            <div class="product-price">
+              <p>$199</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
-          <article class="featured-feature-card watch">
+
+          <!-- Smart Watch -->
+          <article class="featured-card watch">
             <div class="featured-badge">HOT</div>
-            <div class="product-image">
+
+            <div class="feature-image">
               <img
                 src="assets/featured/apple-smart-watch.jpg"
-                alt="smart watch"
-                height="50px"
-                width="60px"
+                alt="Smart watch"
               />
             </div>
-            <div class="product-name"><h3>Smart Watch</h3></div>
+
+            <div class="product-name">
+              <h3>Smart Watch</h3>
+            </div>
+
             <div class="product-category">
               <p>Electronics</p>
             </div>
-            <div class="product-rating"><span>★★★★★</span></div>
-            <div class="product-price"><p>$249</p></div>
+
+            <div class="product-rating" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+
+            <div class="product-price">
+              <p>$249</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
-          <article class="featured-feature-card shoes">
+
+          <!-- Running Shoes -->
+          <article class="featured-card shoes">
             <div class="featured-badge">SALE</div>
-            <div class="product-image">
+
+            <div class="feature-image">
               <img
                 src="assets/featured/running-shoes.jpg"
-                alt="running shoes"
-                height="50px"
-                width="60px"
+                alt="Running shoes"
               />
             </div>
-            <div class="product-name"><h3>Running Shoes</h3></div>
+
+            <div class="product-name">
+              <h3>Running Shoes</h3>
+            </div>
+
             <div class="product-category">
               <p>Fashion</p>
             </div>
-            <div class="product-rating"><span>★★★★★</span></div>
-            <div class="product-price"><p>$89</p></div>
+
+            <div class="product-rating" aria-label="5 out of 5 stars">
+              <span>★★★★★</span>
+            </div>
+
+            <div class="product-price">
+              <p>$89</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
-          <article class="featured-feature-card backpack">
-            <div class="featured-badge">FEATURE</div>
-            <div class="product-image">
-              <img
-                src="assets/featured/bag.jpg"
-                alt="backpack"
-                height="50px"
-                width="60px"
-              />
+
+          <!-- Backpack -->
+          <article class="featured-card backpack">
+            <div class="featured-badge">FEATURED</div>
+
+            <div class="feature-image">
+              <img src="assets/featured/bag.jpg" alt="Travel backpack" />
             </div>
-            <div class="product-name"><h3>Travel Backpack</h3></div>
+
+            <div class="product-name">
+              <h3>Travel Backpack</h3>
+            </div>
+
             <div class="product-category">
               <p>Accessories</p>
             </div>
-            <div class="product-rating"><span>★★★★☆</span></div>
-            <div class="product-price"><p>$78</p></div>
+
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span>★★★★☆</span>
+            </div>
+
+            <div class="product-price">
+              <p>$78</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
-          <article class="featured-feature-card coffee-maker">
+
+          <!-- Coffee Maker -->
+          <article class="featured-card coffee-maker">
             <div class="featured-badge">HOT</div>
-            <div class="product-image">
-              <img
-                src="assets/featured/cofee-maker.jpg"
-                alt="cofee-maker"
-                height="50px"
-                width="60px"
-              />
+
+            <div class="feature-image">
+              <img src="assets/featured/coffee-maker.jpg" alt="Coffee maker" />
             </div>
-            <div class="product-name"><h3>Coffee Maker</h3></div>
+
+            <div class="product-name">
+              <h3>Coffee Maker</h3>
+            </div>
+
             <div class="product-category">
-              <p>Home & Kitchen</p>
+              <p>Home &amp; Kitchen</p>
             </div>
-            <div class="product-rating"><span>★★★★☆</span></div>
-            <div class="product-price"><p>$149</p></div>
+
+            <div class="product-rating" aria-label="4 out of 5 stars">
+              <span>★★★★☆</span>
+            </div>
+
+            <div class="product-price">
+              <p>$149</p>
+            </div>
+
             <div class="add-to-cart-btn">
-              <button>Add to cart</button>
+              <button type="button">Add to Cart</button>
             </div>
           </article>
         </div>
+
+        <div class="featured-cta">
+          <a href="products.html" class="cta-button"> View All Products </a>
+        </div>
       </section>
+
+      <!-- ==================== WHY CHOOSE US ==================== -->
       <section class="choose-us">
         <h2 class="choose-us-heading">Why Choose ShopEase?</h2>
+
         <p class="choose-us-desc">
           We make shopping simple, secure, and reliable with quality products
           and excellent customer service.
         </p>
+
         <div class="features-container">
-          <article class="feature-card">
-            <div class="feature-card-icon">
-              <img
-                src="assets/icon/shipping.png"
-                alt="free shipping"
-                height="16px"
-                width="30px"
-              />
+          <!-- Free Shipping -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="assets/icon/shipping.png" alt="Free shipping" />
             </div>
-            <div class="feature-card-heading"><h3>Free Shipping</h3></div>
-            <div class="feature-card-desc">
+
+            <div class="card-heading">
+              <h3>Free Shipping</h3>
+            </div>
+
+            <div class="card-desc">
               <p>Enjoy free shipping on all orders over $50.</p>
             </div>
-            <div class="feature-card-link">
+
+            <div class="card-link">
               <a href="#">Learn More →</a>
             </div>
           </article>
-          <article class="feature-card">
-            <div class="feature-card-icon">
-              <img
-                src="assets/icon/payment.png"
-                alt="Secure payment"
-                height="16px"
-                width="30px"
-              />
+
+          <!-- Secure Payment -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="assets/icon/payment.png" alt="Secure payment" />
             </div>
-            <div class="feature-card-heading"><h3>Secure Payment</h3></div>
-            <div class="feature-card-desc">
+
+            <div class="card-heading">
+              <h3>Secure Payment</h3>
+            </div>
+
+            <div class="card-desc">
               <p>Shop confidently with safe and encrypted payment methods.</p>
             </div>
-            <div class="feature-card-link">
+
+            <div class="card-link">
               <a href="#">Learn More →</a>
             </div>
           </article>
-          <article class="feature-card">
-            <div class="feature-card-icon">
-              <img
-                src="assets/icon/return.png"
-                alt="easy-returns"
-                height="16px"
-                width="30px"
-              />
+
+          <!-- Easy Returns -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="assets/icon/return.png" alt="Easy returns" />
             </div>
-            <div class="feature-card-heading"><h3>Easy Returns</h3></div>
-            <div class="feature-card-desc">
+
+            <div class="card-heading">
+              <h3>Easy Returns</h3>
+            </div>
+
+            <div class="card-desc">
               <p>Return products within 30 days with no hassle.</p>
             </div>
-            <div class="feature-card-link">
+
+            <div class="card-link">
               <a href="#">Learn More →</a>
             </div>
           </article>
-          <article class="feature-card">
-            <div class="feature-card-icon">
-              <img
-                src="assets/icon/support.png"
-                alt="customer support"
-                height="16px"
-                width="30px"
-              />
+
+          <!-- Customer Support -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="assets/icon/support.png" alt="Customer support" />
             </div>
-            <div class="feature-card-heading">
+
+            <div class="card-heading">
               <h3>24/7 Customer Support</h3>
             </div>
-            <div class="feature-card-desc">
+
+            <div class="card-desc">
               <p>
-                Our support team is available 24/7 to assist you with any
-                questions or concerns.
+                Get help from our customer support team whenever you need it.
               </p>
             </div>
-            <div class="feature-card-link">
-              <a href="">Learn More →</a>
+
+            <div class="card-link">
+              <a href="contact.html">Contact Us →</a>
             </div>
           </article>
         </div>
       </section>
-      <section class="brand">
+
+      <!-- ==================== FEATURED BRANDS ==================== -->
+      <section class="feature-brand">
         <h2>Featured Brands</h2>
+
         <p>Shop products from the world's most trusted brands.</p>
-        <div class="brands-container">
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/apple-logo.png"
-                alt="apple logo"
-                height="18px"
-                width="30px"
-              />
+
+        <div class="feature-card">
+          <!-- Apple -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/apple-logo.png" alt="Apple" />
             </div>
-            <div class="brand-name"><h3>Apple</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Apple</h3>
+            </div>
           </article>
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/samsung.webp"
-                alt="samsung logo"
-                height="18px"
-                width="30px"
-              />
+
+          <!-- Samsung -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/samsung.webp" alt="Samsung" />
             </div>
-            <div class="brand-name"><h3>Samsung</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Samsung</h3>
+            </div>
           </article>
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/sony.jpg"
-                alt="sony logo"
-                height="18px"
-                width="30px"
-              />
+
+          <!-- Sony -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/sony.jpg" alt="Sony" />
             </div>
-            <div class="brand-name"><h3>Sony</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Sony</h3>
+            </div>
           </article>
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/nike.jpg"
-                alt="nike logo"
-                height="18px"
-                width="30px"
-              />
+
+          <!-- Nike -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/nike.jpg" alt="Nike" />
             </div>
-            <div class="brand-name"><h3>Nike</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Nike</h3>
+            </div>
           </article>
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/adidas.png"
-                alt="adidas logo"
-                height="18px"
-                width="30px"
-              />
+
+          <!-- Adidas -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/adidas.png" alt="Adidas" />
             </div>
-            <div class="brand-name"><h3>Adidas</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Adidas</h3>
+            </div>
           </article>
-          <article class="brand-card">
-            <div class="brand-image">
-              <img
-                src="assets/brand/dell.jpg"
-                alt="dell logo"
-                height="18px"
-                width="30px"
-              />
+
+          <!-- Dell -->
+          <article>
+            <div class="feature-brand-image">
+              <img src="assets/brand/dell.jpg" alt="Dell" />
             </div>
-            <div class="brand-name"><h3>Dell</h3></div>
+
+            <div class="feature-brand-name">
+              <h3>Dell</h3>
+            </div>
           </article>
         </div>
       </section>
+
+      <!-- ==================== TESTIMONIALS ==================== -->
       <section class="testimonial">
         <h2>What Our Customers Say</h2>
+
         <p>Thousands of happy customers trust ShopEase every day.</p>
+
         <div class="testimonials-container">
+          <!-- Testimonial 1 -->
           <article class="testimonial-card">
-            <div class="rating">★★★★★</div>
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+
             <div class="testimonial-text">
               <p>
                 "The quality exceeded my expectations. Fast shipping and
                 excellent customer service!"
               </p>
             </div>
+
             <div class="customer">
               <div class="customer-image">
                 <img
                   src="assets/testimonials/Customer 1.jpg"
                   alt="Sarah Johnson"
-                  height="30px"
-                  width="50px"
                 />
               </div>
-              <div class="customer-name"><h3>Sarah Johnson</h3></div>
-              <div class="customer-role"><p>Verified Customer</p></div>
+
+              <div class="customer-name">
+                <p>Sarah Johnson</p>
+              </div>
+
+              <div class="customer-role">
+                <p>Verified Customer</p>
+              </div>
             </div>
           </article>
+
+          <!-- Testimonial 2 -->
           <article class="testimonial-card">
-            <div class="rating">★★★★★</div>
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+
             <div class="testimonial-text">
               <p>
                 "Shopping at ShopEase is always a smooth experience. Highly
                 recommended!"
               </p>
             </div>
+
             <div class="customer">
               <div class="customer-image">
                 <img
                   src="assets/testimonials/Customer 2.jpg"
                   alt="Michael Lee"
-                  height="30px"
-                  width="50px"
                 />
               </div>
-              <div class="customer-name"><h3>Michael Lee</h3></div>
-              <div class="customer-role"><p>Verified Customer</p></div>
+
+              <div class="customer-name">
+                <p>Michael Lee</p>
+              </div>
+
+              <div class="customer-role">
+                <p>Verified Customer</p>
+              </div>
             </div>
           </article>
+
+          <!-- Testimonial 3 -->
           <article class="testimonial-card">
-            <div class="rating">★★★★★</div>
+            <div class="rating" aria-label="5 out of 5 stars">★★★★★</div>
+
             <div class="testimonial-text">
               <p>
                 "I love the variety of products and the quick delivery. I'll
                 definitely shop again."
               </p>
             </div>
+
             <div class="customer">
               <div class="customer-image">
                 <img
                   src="assets/testimonials/Customer 3.jpg"
                   alt="Emily Davis"
-                  height="30px"
-                  width="50px"
                 />
               </div>
-              <div class="customer-name"><h3>Emily Davis</h3></div>
-              <div class="customer-role"><p>Verified Customer</p></div>
+
+              <div class="customer-name">
+                <p>Emily Davis</p>
+              </div>
+
+              <div class="customer-role">
+                <p>Verified Customer</p>
+              </div>
             </div>
           </article>
         </div>
       </section>
+
+      <!-- ==================== NEWSLETTER ==================== -->
       <section class="newsletter">
         <h2>Subscribe to Our Newsletter</h2>
+
         <p>
           Get exclusive deals, product updates, and special offers delivered
           straight to your inbox.
         </p>
-        <form class="newsletter-form" action="" method="post">
+
+        <form action="" method="post">
           <label for="email">Email Address</label>
+
           <input
             type="email"
             name="email"
@@ -570,66 +719,85 @@
             required
             autocomplete="email"
           />
+
           <button type="submit">Subscribe</button>
         </form>
       </section>
     </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+      <div class="footer-container">
+        <!-- About -->
+        <section class="footer-about">
+          <div class="logo">
+            <a href="index.html">ShopEase</a>
+          </div>
+
+          <p>
+            ShopEase is your one-stop destination for quality products at
+            affordable prices with fast delivery and secure shopping.
+          </p>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="quick-links">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </section>
+
+        <!-- Customer Service -->
+        <section class="customer-service">
+          <h3>Customer Service</h3>
+
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+          </ul>
+        </section>
+
+        <!-- Follow Us -->
+        <section class="follow-us">
+          <h3>Follow Us</h3>
+
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X (Twitter)</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Payment Methods -->
+      <div class="payment-methods">
+        <h3>Accepted Payments</h3>
+
+        <ul>
+          <li>Visa</li>
+          <li>MasterCard</li>
+          <li>PayPal</li>
+          <li>UPI</li>
+        </ul>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2026 ShopEase. All Rights Reserved.</p>
+      </div>
+    </footer>
   </body>
-  <footer>
-    <div class="footer-container">
-      <section class="footer-about">
-        <div class="logo">
-          <a href="index.html">ShopEase</a>
-        </div>
-        <p>
-          ShopEase is your one-stop destination for quality products at
-          affordable prices with fast delivery and secure shopping.
-        </p>
-      </section>
-      <section class="quick-links">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Shop</a></li>
-          <li><a href="categories.html">Categories</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </section>
-      <section class="customer-service">
-        <h3>Customer Service</h3>
-        <ul>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="#">Shipping Policy</a></li>
-          <li><a href="#">Refund Policy</a></li>
-          <li><a href="#">Return Policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms & Conditions</a></li>
-        </ul>
-      </section>
-      <section class="follow-us">
-        <h3>Follow Us</h3>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">X (Twitter)</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">YouTube</a></li>
-        </ul>
-      </section>
-    </div>
-    <div class="payment-methods">
-      <h3>Accepted Payments</h3>
-      <ul>
-        <li>Visa</li>
-        <li>MasterCard</li>
-        <li>PayPal</li>
-        <li>UPI</li>
-      </ul>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 ShopEase. All Rights Reserved.</p>
-    </div>
-  </footer>
 </html>
