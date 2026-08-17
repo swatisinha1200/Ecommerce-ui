@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | ShopEase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Shopping Cart</h1>
+        <p>Review your items before checkout.</p>
+      </section>
+
+      <section class="cart">
+        <div class="cart-items">
+          <article class="cart-item">
+            <div class="cart-image">
+              <img src="assets/featured/laptop.jpg" alt="Laptop" />
+            </div>
+
+            <div class="cart-product">
+              <span>Electronics</span>
+              <h2>Laptop</h2>
+              <p>Premium Laptop</p>
+            </div>
+
+            <div class="cart-price">
+              <p>$1200</p>
+            </div>
+
+            <div class="cart-quantity">
+              <label for="laptop-quantity">Quantity</label>
+
+              <input
+                type="number"
+                id="laptop-quantity"
+                name="laptop_quantity"
+                value="1"
+                min="1"
+                max="10"
+              />
+            </div>
+
+            <div class="cart-total">
+              <p>$1200</p>
+            </div>
+
+            <button type="button">Remove</button>
+          </article>
+
+          <article class="cart-item">
+            <div class="cart-image">
+              <img
+                src="assets/featured/headphone.jpg"
+                alt="Wireless Headphones"
+              />
+            </div>
+
+            <div class="cart-product">
+              <span>Electronics</span>
+              <h2>Wireless Headphones</h2>
+              <p>Noise Cancelling Headphones</p>
+            </div>
+
+            <div class="cart-price">
+              <p>$199</p>
+            </div>
+
+            <div class="cart-quantity">
+              <label for="headphone-quantity">Quantity</label>
+
+              <input
+                type="number"
+                id="headphone-quantity"
+                name="headphone_quantity"
+                value="1"
+                min="1"
+                max="10"
+              />
+            </div>
+
+            <div class="cart-total">
+              <p>$199</p>
+            </div>
+
+            <button type="button">Remove</button>
+          </article>
+        </div>
+
+        <aside class="cart-summary">
+          <h2>Order Summary</h2>
+
+          <dl>
+            <div>
+              <dt>Subtotal</dt>
+              <dd>$1399</dd>
+            </div>
+
+            <div>
+              <dt>Shipping</dt>
+              <dd>Free</dd>
+            </div>
+
+            <div>
+              <dt>Discount</dt>
+              <dd>-$50</dd>
+            </div>
+
+            <div>
+              <dt>Tax</dt>
+              <dd>$134.90</dd>
+            </div>
+
+            <div class="cart-grand-total">
+              <dt>Total</dt>
+              <dd>$1483.90</dd>
+            </div>
+          </dl>
+
+          <div class="coupon">
+            <form action="" method="post">
+              <label for="coupon">Coupon Code</label>
+
+              <input
+                type="text"
+                name="coupon"
+                id="coupon"
+                placeholder="Enter coupon code"
+              />
+
+              <button type="submit">Apply</button>
+            </form>
+          </div>
+
+          <a href="checkout.html" class="checkout-button">
+            Proceed to Checkout
+          </a>
+
+          <a href="products.html"> Continue Shopping </a>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
