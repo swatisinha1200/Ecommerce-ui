@@ -3,92 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact | ShopEase</title>
+    <meta
+      name="description"
+      content="Contact ShopEase customer support for questions, orders, returns, and other assistance."
+    />
+    <title>Contact Us | ShopEase</title>
   </head>
 
   <body>
-    <!-- Header -->
     <header>
-      <div class="container">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="index.html">ShopEase</a>
-        </div>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
 
-        <!-- Navigation -->
-        <nav class="navigation">
-          <a href="index.html">Home</a>
-          <a href="products.html">Shop</a>
-          <a href="categories.html">Categories</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
 
-        <!-- User Actions -->
-        <div class="user-actions">
-          <!-- Search -->
-          <div class="search">
-            <form action="" method="get">
-              <label for="search">Search Products</label>
+      <div class="search">
+        <form action="products.html" method="get">
+          <label for="search">Search Products</label>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search products..."
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
 
-              <input
-                type="search"
-                name="search"
-                id="search"
-                placeholder="Search products..."
-              />
+      <div class="wishlist">
+        <a href="wishlist.html">Wishlist</a>
+        <span>2</span>
+      </div>
 
-              <button type="submit" aria-label="Search products">
-                <img src="assets/icon/search.png" alt="Search" />
-              </button>
-            </form>
-          </div>
+      <div class="cart">
+        <a href="cart.html">Cart</a>
+        <span>3</span>
+      </div>
 
-          <!-- Wishlist -->
-          <div class="wishlist">
-            <a href="wishlist.html">
-              <img src="assets/icon/heart.png" alt="Wishlist" />
-            </a>
-            <span>2</span>
-          </div>
-
-          <!-- Cart -->
-          <div class="cart">
-            <a href="cart.html">
-              <img src="assets/icon/shopping-cart.png" alt="Shopping cart" />
-            </a>
-            <span>3</span>
-          </div>
-
-          <!-- Profile -->
-          <div class="profile">
-            <img src="assets/icon/account.png" alt="Profile" />
-
-            <span>Swati</span>
-
-            <div class="drop-down">
-              <a href="profile.html">My Profile</a>
-              <a href="orders.html">My Orders</a>
-              <a href="wishlist.html">Wishlist</a>
-              <a href="login.html">Logout</a>
-            </div>
-          </div>
-        </div>
+      <div class="profile">
+        <a href="profile.html">My Profile</a>
       </div>
     </header>
 
-    <!-- Main -->
     <main>
-      <!-- Contact Hero -->
-      <section class="contact-hero">
-        <div class="contact-hero-content">
-          <h1>Contact Us</h1>
-
-          <p>
-            Have a question, suggestion, or need help with your order? We're
-            here to help.
-          </p>
-        </div>
+      <!-- Page Header -->
+      <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>
+          Have a question or need help? Our customer support team is here to
+          help.
+        </p>
       </section>
 
       <!-- Contact Information -->
@@ -96,283 +67,218 @@
         <h2>Get in Touch</h2>
 
         <p>
-          Our customer support team is ready to assist you with your shopping
-          experience.
+          Whether you have a question about your order, product, shipping,
+          returns, or payments, feel free to contact us.
         </p>
 
-        <div class="contact-info-container">
-          <article class="contact-info-card">
-            <div class="contact-icon">
-              <img src="assets/icon/email.png" alt="Email" />
-            </div>
+        <article class="contact-card">
+          <h3>Email Us</h3>
+          <p>
+            <a href="mailto:support@shopease.com"> support@shopease.com </a>
+          </p>
+        </article>
 
-            <h3>Email Us</h3>
+        <article class="contact-card">
+          <h3>Call Us</h3>
+          <p>
+            <a href="tel:+18001234567"> +1 800 123 4567 </a>
+          </p>
+        </article>
 
-            <p>support@shopease.com</p>
+        <article class="contact-card">
+          <h3>Visit Us</h3>
+          <address>
+            ShopEase Headquarters<br />
+            123 Market Street<br />
+            New York, NY 10001<br />
+            United States
+          </address>
+        </article>
 
-            <a href="mailto:support@shopease.com"> Send an Email </a>
-          </article>
+        <article class="contact-card">
+          <h3>Business Hours</h3>
 
-          <article class="contact-info-card">
-            <div class="contact-icon">
-              <img src="assets/icon/phone.png" alt="Phone" />
-            </div>
+          <dl>
+            <dt>Monday - Friday</dt>
+            <dd>9:00 AM - 6:00 PM</dd>
 
-            <h3>Call Us</h3>
+            <dt>Saturday</dt>
+            <dd>10:00 AM - 4:00 PM</dd>
 
-            <p>+1 800 123 4567</p>
-
-            <a href="tel:+18001234567"> Call Now </a>
-          </article>
-
-          <article class="contact-info-card">
-            <div class="contact-icon">
-              <img src="assets/icon/location.png" alt="Location" />
-            </div>
-
-            <h3>Visit Us</h3>
-
-            <p>123 Market Street, New York, USA</p>
-
-            <a href="#"> View Location </a>
-          </article>
-
-          <article class="contact-info-card">
-            <div class="contact-icon">
-              <img src="assets/icon/support.png" alt="Customer support" />
-            </div>
-
-            <h3>Customer Support</h3>
-
-            <p>Available 24/7</p>
-
-            <a href="faq.html"> Visit FAQs </a>
-          </article>
-        </div>
+            <dt>Sunday</dt>
+            <dd>Closed</dd>
+          </dl>
+        </article>
       </section>
 
       <!-- Contact Form -->
       <section class="contact-form-section">
-        <div class="contact-form-container">
-          <div class="contact-form-content">
-            <h2>Send Us a Message</h2>
-
-            <p>
-              Fill out the form below and our team will get back to you as soon
-              as possible.
-            </p>
-
-            <form action="" method="post">
-              <!-- Name -->
-              <div class="form-group">
-                <label for="name">Full Name</label>
-
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your full name"
-                  autocomplete="name"
-                  required
-                />
-              </div>
-
-              <!-- Email -->
-              <div class="form-group">
-                <label for="email">Email Address</label>
-
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your email address"
-                  autocomplete="email"
-                  required
-                />
-              </div>
-
-              <!-- Phone -->
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-
-                <input
-                  type="tel"
-                  name="phone"
-                  id="phone"
-                  placeholder="Enter your phone number"
-                  autocomplete="tel"
-                />
-              </div>
-
-              <!-- Subject -->
-              <div class="form-group">
-                <label for="subject">Subject</label>
-
-                <select name="subject" id="subject" required>
-                  <option value="">Select a subject</option>
-                  <option value="order">Order Support</option>
-                  <option value="product">Product Question</option>
-                  <option value="shipping">Shipping Question</option>
-                  <option value="return">Return or Refund</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-
-              <!-- Order Number -->
-              <div class="form-group">
-                <label for="order-number"> Order Number </label>
-
-                <input
-                  type="text"
-                  name="order-number"
-                  id="order-number"
-                  placeholder="Enter your order number"
-                />
-              </div>
-
-              <!-- Preferred Contact -->
-              <fieldset>
-                <legend>Preferred Contact Method</legend>
-
-                <label>
-                  <input
-                    type="radio"
-                    name="contact-method"
-                    value="email"
-                    checked
-                  />
-                  Email
-                </label>
-
-                <label>
-                  <input type="radio" name="contact-method" value="phone" />
-                  Phone
-                </label>
-              </fieldset>
-
-              <!-- Message -->
-              <div class="form-group">
-                <label for="message">Message</label>
-
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="6"
-                  placeholder="Write your message..."
-                  required
-                ></textarea>
-              </div>
-
-              <!-- Consent -->
-              <div class="form-checkbox">
-                <label>
-                  <input
-                    type="checkbox"
-                    name="contact-consent"
-                    value="yes"
-                    required
-                  />
-
-                  I agree to be contacted regarding my request.
-                </label>
-              </div>
-
-              <!-- Submit -->
-              <button type="submit">Send Message</button>
-            </form>
-          </div>
-
-          <!-- Contact Image -->
-          <div class="contact-form-image">
-            <img
-              src="assets/contact/customer-support.jpg"
-              alt="ShopEase customer support"
-            />
-          </div>
-        </div>
-      </section>
-
-      <!-- Business Hours -->
-      <section class="business-hours">
-        <h2>Business Hours</h2>
+        <h2>Send Us a Message</h2>
 
         <p>
-          Our online store is available 24/7. Customer support is available
-          during the following hours.
+          Fill out the form below and our support team will get back to you.
         </p>
 
-        <table>
-          <thead>
-            <tr>
-              <th scope="col">Day</th>
-              <th scope="col">Opening Time</th>
-              <th scope="col">Closing Time</th>
-            </tr>
-          </thead>
+        <form action="" method="post">
+          <!-- Personal Information -->
+          <fieldset>
+            <legend>Your Information</legend>
 
-          <tbody>
-            <tr>
-              <td>Monday</td>
-              <td>9:00 AM</td>
-              <td>8:00 PM</td>
-            </tr>
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input
+                type="text"
+                name="full_name"
+                id="full-name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+              />
+            </div>
 
-            <tr>
-              <td>Tuesday</td>
-              <td>9:00 AM</td>
-              <td>8:00 PM</td>
-            </tr>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+              />
+            </div>
 
-            <tr>
-              <td>Wednesday</td>
-              <td>9:00 AM</td>
-              <td>8:00 PM</td>
-            </tr>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                autocomplete="tel"
+              />
+            </div>
+          </fieldset>
 
-            <tr>
-              <td>Thursday</td>
-              <td>9:00 AM</td>
-              <td>8:00 PM</td>
-            </tr>
+          <!-- Message Information -->
+          <fieldset>
+            <legend>Message Details</legend>
 
-            <tr>
-              <td>Friday</td>
-              <td>9:00 AM</td>
-              <td>8:00 PM</td>
-            </tr>
+            <div class="form-group">
+              <label for="subject">Subject</label>
 
-            <tr>
-              <td>Saturday</td>
-              <td>10:00 AM</td>
-              <td>6:00 PM</td>
-            </tr>
+              <select name="subject" id="subject" required>
+                <option value="">Select a subject</option>
+                <option value="order">Order Related</option>
+                <option value="shipping">Shipping</option>
+                <option value="return">Return</option>
+                <option value="refund">Refund</option>
+                <option value="product">Product Question</option>
+                <option value="payment">Payment</option>
+                <option value="account">Account</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
 
-            <tr>
-              <td>Sunday</td>
-              <td>10:00 AM</td>
-              <td>4:00 PM</td>
-            </tr>
-          </tbody>
-        </table>
+            <div class="form-group">
+              <label for="order-number">Order Number</label>
+              <input
+                type="text"
+                name="order_number"
+                id="order-number"
+                placeholder="Example: SE-10001"
+              />
+            </div>
+
+            <div class="form-group">
+              <p>Preferred Contact Method</p>
+
+              <label>
+                <input
+                  type="radio"
+                  name="contact_method"
+                  value="email"
+                  checked
+                />
+                Email
+              </label>
+
+              <label>
+                <input type="radio" name="contact_method" value="phone" />
+                Phone
+              </label>
+              <label>
+                <input type="radio" name="contact_method" value="either" />
+                Either
+              </label>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+
+              <textarea
+                name="message"
+                id="message"
+                rows="8"
+                cols="50"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <!-- Consent -->
+          <div class="form-group">
+            <label>
+              <input
+                type="checkbox"
+                name="contact_consent"
+                value="yes"
+                required
+              />
+              I agree to be contacted by ShopEase regarding my inquiry.
+            </label>
+          </div>
+
+          <button type="submit">Send Message</button>
+          <button type="reset">Clear Form</button>
+        </form>
       </section>
 
-      <!-- FAQ CTA -->
-      <section class="faq-cta">
-        <h2>Have More Questions?</h2>
+      <!-- FAQ -->
+      <section class="contact-faq">
+        <h2>Need a Quick Answer?</h2>
 
         <p>
-          Find quick answers to common questions about orders, shipping,
-          returns, and payments.
+          You may find the answer to your question in our frequently asked
+          questions.
         </p>
 
-        <a href="faq.html" class="cta-button"> Visit FAQ </a>
+        <a href="faq.html">Visit Frequently Asked Questions</a>
+      </section>
+
+      <!-- Customer Service -->
+      <section class="customer-service">
+        <h2>Customer Support</h2>
+
+        <p>
+          Our customer service team can help with orders, shipping, returns,
+          refunds, payments, and account-related questions.
+        </p>
+
+        <ul>
+          <li>Order assistance</li>
+          <li>Shipping information</li>
+          <li>Returns and refunds</li>
+          <li>Payment assistance</li>
+          <li>Account support</li>
+          <li>Product questions</li>
+        </ul>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
       <div class="footer-container">
-        <!-- About -->
         <section class="footer-about">
           <div class="logo">
             <a href="index.html">ShopEase</a>
@@ -384,7 +290,6 @@
           </p>
         </section>
 
-        <!-- Quick Links -->
         <section class="quick-links">
           <h3>Quick Links</h3>
 
@@ -397,22 +302,20 @@
           </ul>
         </section>
 
-        <!-- Customer Service -->
-        <section class="customer-service">
+        <section class="customer-service-links">
           <h3>Customer Service</h3>
 
           <ul>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="faq.html">FAQs</a></li>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Refund Policy</a></li>
-            <li><a href="#">Return Policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            <li><a href="refund-policy.html">Refund Policy</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms &amp; Conditions</a></li>
           </ul>
         </section>
 
-        <!-- Follow Us -->
         <section class="follow-us">
           <h3>Follow Us</h3>
 
@@ -426,7 +329,6 @@
         </section>
       </div>
 
-      <!-- Payment Methods -->
       <div class="payment-methods">
         <h3>Accepted Payments</h3>
 
@@ -438,7 +340,6 @@
         </ul>
       </div>
 
-      <!-- Copyright -->
       <div class="footer-bottom">
         <p>© 2026 ShopEase. All Rights Reserved.</p>
       </div>
