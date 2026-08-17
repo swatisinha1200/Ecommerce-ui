@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Products | ShopEase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Shop All Products</h1>
+        <p>Find quality products at great prices.</p>
+      </section>
+
+      <section class="product-shop">
+        <aside class="filters">
+          <h2>Filter Products</h2>
+
+          <form action="" method="get">
+            <fieldset>
+              <legend>Search</legend>
+
+              <label for="product-search">Search Products</label>
+              <input
+                type="search"
+                id="product-search"
+                name="search"
+                placeholder="Search products..."
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Category</legend>
+
+              <label>
+                <input type="checkbox" name="category" value="electronics" />
+                Electronics
+              </label>
+
+              <label>
+                <input type="checkbox" name="category" value="fashion" />
+                Fashion
+              </label>
+
+              <label>
+                <input type="checkbox" name="category" value="home-kitchen" />
+                Home &amp; Kitchen
+              </label>
+
+              <label>
+                <input type="checkbox" name="category" value="beauty" />
+                Beauty
+              </label>
+
+              <label>
+                <input type="checkbox" name="category" value="sports" />
+                Sports
+              </label>
+
+              <label>
+                <input type="checkbox" name="category" value="books" />
+                Books
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Price Range</legend>
+
+              <label for="min-price">Minimum Price</label>
+              <input
+                type="number"
+                id="min-price"
+                name="min_price"
+                min="0"
+                placeholder="$0"
+              />
+
+              <label for="max-price">Maximum Price</label>
+              <input
+                type="number"
+                id="max-price"
+                name="max_price"
+                min="0"
+                placeholder="$2000"
+              />
+            </fieldset>
+
+            <button type="submit">Apply Filters</button>
+            <a href="products.html">Clear Filters</a>
+          </form>
+        </aside>
+
+        <div class="products-content">
+          <div class="products-toolbar">
+            <p>Showing 12 of 48 products</p>
+
+            <label for="sort">Sort By</label>
+
+            <select name="sort" id="sort">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+
+          <div class="products-grid">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/featured/laptop.jpg" alt="Laptop" />
+              </div>
+
+              <div class="product-info">
+                <span>Electronics</span>
+                <h2>Laptop</h2>
+                <p>★★★★★</p>
+                <p>$1200</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/featured/headphone.jpg"
+                  alt="Wireless Headphones"
+                />
+              </div>
+
+              <div class="product-info">
+                <span>Electronics</span>
+                <h2>Wireless Headphones</h2>
+                <p>★★★★☆</p>
+                <p>$199</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/featured/apple-smart-watch.jpg"
+                  alt="Smart Watch"
+                />
+              </div>
+
+              <div class="product-info">
+                <span>Electronics</span>
+                <h2>Smart Watch</h2>
+                <p>★★★★★</p>
+                <p>$249</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img
+                  src="assets/featured/running-shoes.jpg"
+                  alt="Running Shoes"
+                />
+              </div>
+
+              <div class="product-info">
+                <span>Fashion</span>
+                <h2>Running Shoes</h2>
+                <p>★★★★★</p>
+                <p>$89</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/featured/bag.jpg" alt="Travel Backpack" />
+              </div>
+
+              <div class="product-info">
+                <span>Accessories</span>
+                <h2>Travel Backpack</h2>
+                <p>★★★★☆</p>
+                <p>$78</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="assets/featured/cofee-maker.jpg" alt="Coffee Maker" />
+              </div>
+
+              <div class="product-info">
+                <span>Home &amp; Kitchen</span>
+                <h2>Coffee Maker</h2>
+                <p>★★★★☆</p>
+                <p>$149</p>
+
+                <a href="product-details.html">View Details</a>
+
+                <button type="button">Add to Wishlist</button>
+
+                <button type="button">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+
+          <nav class="pagination" aria-label="Product pages">
+            <a href="#" aria-label="Previous page">Previous</a>
+            <a href="#" aria-current="page">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#" aria-label="Next page">Next</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
