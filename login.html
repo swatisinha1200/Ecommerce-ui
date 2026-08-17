@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | ShopEase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="login">
+        <h1>Welcome Back</h1>
+
+        <p>Login to your ShopEase account.</p>
+
+        <form action="" method="post">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+              minlength="8"
+              required
+            />
+          </div>
+
+          <div class="login-options">
+            <label>
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+
+            <a href="forgot-password.html">Forgot Password?</a>
+          </div>
+
+          <button type="submit">Login</button>
+        </form>
+
+        <p>
+          Don't have an account?
+          <a href="register.html">Create an account</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
