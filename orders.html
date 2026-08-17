@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders | ShopEase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>My Orders</h1>
+        <p>View and track your previous orders.</p>
+      </section>
+
+      <section class="orders">
+        <div class="orders-toolbar">
+          <h2>Order History</h2>
+
+          <form action="" method="get">
+            <label for="order-status">Filter Orders</label>
+
+            <select id="order-status" name="status">
+              <option value="all">All Orders</option>
+              <option value="processing">Processing</option>
+              <option value="shipped">Shipped</option>
+              <option value="delivered">Delivered</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+
+            <button type="submit">Filter</button>
+          </form>
+        </div>
+
+        <div class="orders-table">
+          <table>
+            <caption>
+              Your recent orders
+            </caption>
+
+            <thead>
+              <tr>
+                <th scope="col">Order ID</th>
+                <th scope="col">Date</th>
+                <th scope="col">Items</th>
+                <th scope="col">Total</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>#SE1001</td>
+                <td>August 15, 2026</td>
+                <td>Laptop</td>
+                <td>$1200</td>
+                <td>Delivered</td>
+                <td>
+                  <a href="#">View Order</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#SE1002</td>
+                <td>August 12, 2026</td>
+                <td>Wireless Headphones</td>
+                <td>$199</td>
+                <td>Shipped</td>
+                <td>
+                  <a href="#">Track Order</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td>#SE1003</td>
+                <td>August 8, 2026</td>
+                <td>Running Shoes</td>
+                <td>$89</td>
+                <td>Processing</td>
+                <td>
+                  <a href="#">View Order</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <section class="order-details">
+          <h2>Recent Order: #SE1001</h2>
+
+          <dl>
+            <div>
+              <dt>Order Date</dt>
+              <dd>August 15, 2026</dd>
+            </div>
+
+            <div>
+              <dt>Payment Method</dt>
+              <dd>Visa ending in 4242</dd>
+            </div>
+
+            <div>
+              <dt>Order Status</dt>
+              <dd>Delivered</dd>
+            </div>
+
+            <div>
+              <dt>Total</dt>
+              <dd>$1200</dd>
+            </div>
+          </dl>
+
+          <a href="products.html">Continue Shopping</a>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

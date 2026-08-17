@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | ShopEase</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">ShopEase</a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="categories.html">Categories</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Checkout</h1>
+        <p>Complete your order securely.</p>
+      </section>
+
+      <section class="checkout">
+        <div class="checkout-form">
+          <form action="" method="post">
+            <fieldset>
+              <legend>Contact Information</legend>
+
+              <label for="checkout-email">Email Address</label>
+
+              <input
+                type="email"
+                id="checkout-email"
+                name="email"
+                placeholder="Enter your email"
+                autocomplete="email"
+                required
+              />
+
+              <label for="checkout-phone">Phone Number</label>
+
+              <input
+                type="tel"
+                id="checkout-phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                autocomplete="tel"
+                required
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Shipping Address</legend>
+
+              <label for="checkout-first-name">First Name</label>
+
+              <input
+                type="text"
+                id="checkout-first-name"
+                name="first_name"
+                autocomplete="given-name"
+                required
+              />
+
+              <label for="checkout-last-name">Last Name</label>
+
+              <input
+                type="text"
+                id="checkout-last-name"
+                name="last_name"
+                autocomplete="family-name"
+                required
+              />
+
+              <label for="checkout-address">Address</label>
+
+              <textarea
+                id="checkout-address"
+                name="address"
+                rows="4"
+                autocomplete="street-address"
+                required
+              ></textarea>
+
+              <label for="checkout-city">City</label>
+
+              <input
+                type="text"
+                id="checkout-city"
+                name="city"
+                autocomplete="address-level2"
+                required
+              />
+
+              <label for="checkout-state">State</label>
+
+              <select
+                id="checkout-state"
+                name="state"
+                autocomplete="address-level1"
+                required
+              >
+                <option value="">Select State</option>
+                <option value="andhra-pradesh">Andhra Pradesh</option>
+                <option value="telangana">Telangana</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="tamil-nadu">Tamil Nadu</option>
+                <option value="maharashtra">Maharashtra</option>
+              </select>
+
+              <label for="checkout-postal-code">Postal Code</label>
+
+              <input
+                type="text"
+                id="checkout-postal-code"
+                name="postal_code"
+                autocomplete="postal-code"
+                required
+              />
+
+              <label for="checkout-country">Country</label>
+
+              <select
+                id="checkout-country"
+                name="country"
+                autocomplete="country-name"
+                required
+              >
+                <option value="">Select Country</option>
+                <option value="india">India</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>Delivery Method</legend>
+
+              <label>
+                <input type="radio" name="delivery" value="standard" checked />
+                Standard Delivery — Free
+              </label>
+
+              <label>
+                <input type="radio" name="delivery" value="express" />
+                Express Delivery — $15
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Payment Method</legend>
+
+              <label>
+                <input type="radio" name="payment" value="card" checked />
+                Credit / Debit Card
+              </label>
+
+              <label>
+                <input type="radio" name="payment" value="upi" />
+                UPI
+              </label>
+
+              <label>
+                <input type="radio" name="payment" value="paypal" />
+                PayPal
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Card Information</legend>
+
+              <label for="card-name">Name on Card</label>
+
+              <input
+                type="text"
+                id="card-name"
+                name="card_name"
+                autocomplete="cc-name"
+              />
+
+              <label for="card-number">Card Number</label>
+
+              <input
+                type="text"
+                id="card-number"
+                name="card_number"
+                inputmode="numeric"
+                autocomplete="cc-number"
+                placeholder="1234 5678 9012 3456"
+              />
+
+              <label for="expiry">Expiry Date</label>
+
+              <input
+                type="month"
+                id="expiry"
+                name="expiry"
+                autocomplete="cc-exp"
+              />
+
+              <label for="cvv">CVV</label>
+
+              <input
+                type="password"
+                id="cvv"
+                name="cvv"
+                inputmode="numeric"
+                autocomplete="cc-csc"
+                maxlength="4"
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Order Notes</legend>
+
+              <label for="order-notes"> Special Instructions </label>
+
+              <textarea
+                id="order-notes"
+                name="order_notes"
+                rows="4"
+                placeholder="Add delivery instructions..."
+              ></textarea>
+            </fieldset>
+
+            <label>
+              <input type="checkbox" name="terms" required />
+              I agree to the Terms &amp; Conditions and Privacy Policy.
+            </label>
+
+            <button type="submit">Place Order</button>
+          </form>
+        </div>
+
+        <aside class="checkout-summary">
+          <h2>Order Summary</h2>
+
+          <article class="summary-product">
+            <img src="assets/featured/laptop.jpg" alt="Laptop" />
+
+            <div>
+              <h3>Laptop</h3>
+              <p>Quantity: 1</p>
+              <p>$1200</p>
+            </div>
+          </article>
+
+          <article class="summary-product">
+            <img
+              src="assets/featured/headphone.jpg"
+              alt="Wireless Headphones"
+            />
+
+            <div>
+              <h3>Wireless Headphones</h3>
+              <p>Quantity: 1</p>
+              <p>$199</p>
+            </div>
+          </article>
+
+          <dl>
+            <div>
+              <dt>Subtotal</dt>
+              <dd>$1399</dd>
+            </div>
+
+            <div>
+              <dt>Shipping</dt>
+              <dd>Free</dd>
+            </div>
+
+            <div>
+              <dt>Discount</dt>
+              <dd>-$50</dd>
+            </div>
+
+            <div>
+              <dt>Tax</dt>
+              <dd>$134.90</dd>
+            </div>
+
+            <div>
+              <dt>Total</dt>
+              <dd>$1483.90</dd>
+            </div>
+          </dl>
+
+          <p>🔒 Your payment information is securely processed.</p>
+
+          <a href="cart.html">Return to Cart</a>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
